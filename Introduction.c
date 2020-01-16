@@ -2,7 +2,14 @@
 struct Node { 
     int data; 
     struct Node* next; 
-}; 
+};                      //**********PRINTING LIST********
+void printList(struct Node* n) 
+{ 
+    while (n != NULL) { 
+        printf(" %d ", n->data); 
+        n = n->next; 
+    } 
+}
 //***********CREATE A LINKED LIST WITH 3 NODES****************************
  
 #include <stdio.h> 
